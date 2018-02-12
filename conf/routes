@@ -1,0 +1,11 @@
+
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+GET         /api/v1/accounts                                 com.antipov.revolut.controllers.BankController.accounts
+POST        /api/v1/account                                  com.antipov.revolut.controllers.BankController.createAccount
+GET         /api/v1/account/:id                              com.antipov.revolut.controllers.BankController.account(id: Long)
+POST        /api/v1/account/:fromId/transaction/:toId        com.antipov.revolut.controllers.BankController.transfer(fromId: Long, toId: Long)
+GET         /api/v1/transaction/:id                          com.antipov.revolut.controllers.BankController.transaction(id: Long)
+GET         /api/v1/account/:accountId/transactions          com.antipov.revolut.controllers.BankController.transactions(accountId: Long)
