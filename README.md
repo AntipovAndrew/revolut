@@ -1,4 +1,4 @@
-#Revolut #
+# Revolut Test Task #
 
 I have used Play Framework and Scala for this task, H2 database as in-memory datastore and Slick for ORM.
 
